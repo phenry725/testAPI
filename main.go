@@ -30,6 +30,7 @@ func main() {
 
 func testMethod(w http.ResponseWriter, r *http.Request) {
   log.Println("Request")
+	// log.Println( )
 	test := Response{Name: "Blah"}
 	json.NewEncoder(w).Encode(test)
 }
